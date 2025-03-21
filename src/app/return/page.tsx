@@ -62,8 +62,9 @@ import { useRouter } from "next/navigation";
 import { Box, Container, Typography, Button, Grid, Card, CardContent, CardMedia } from "@mui/material";
 
 const borrowedBooks = [
-  { id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald", image: "/images/gatsby.jpg" },
-  { id: 2, title: "1984", author: "George Orwell", image: "/images/1984.jpg" },
+  { id: 1, title: "The Pilgrim's Progess", author: "John Bunyan", image: "/images/pilgrims.jpg" },
+    { id: 2, title: "Broken Still Chosen", author: "Rob Roozeboom", image: "/images/broken.jpg" },
+    { id: 3, title: "Through Gates of Splendor", author: "Elisabeth Elliot", image: "/images/splendour.jpg" },
 ];
 
 export default function ReturnBooks() {
@@ -100,7 +101,7 @@ export default function ReturnBooks() {
             {borrowedBooks.map((book) => (
               <Grid item xs={12} sm={6} md={4} key={book.id}>
                 <Card sx={{ maxWidth: 300, boxShadow: 3 }}>
-                  <CardMedia component="img" height="300" image={book.image} alt={book.title} />
+                  <CardMedia component="img" height="350" image={book.image} alt={book.title} />
                   <CardContent>
                     <Typography variant="h6">{book.title}</Typography>
                     <Typography variant="body2" color="text.secondary">
