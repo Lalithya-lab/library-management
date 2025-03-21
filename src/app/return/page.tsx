@@ -64,7 +64,6 @@ import { Box, Container, Typography, Button, Grid, Card, CardContent, CardMedia 
 const borrowedBooks = [
   { id: 1, title: "The Pilgrim's Progess", author: "John Bunyan", image: "/images/pilgrims.jpg" },
     { id: 2, title: "Broken Still Chosen", author: "Rob Roozeboom", image: "/images/broken.jpg" },
-    { id: 3, title: "Through Gates of Splendor", author: "Elisabeth Elliot", image: "/images/splendour.jpg" },
 ];
 
 export default function ReturnBooks() {
